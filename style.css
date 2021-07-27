@@ -31,9 +31,9 @@ vidwrapper {
   border: 5px solid black;
 }
 .vidcontainer {
-  width: 80%;
+  width: 50%;
   max-width: 100%;
-  padding-bottom: 40%;
+  padding-bottom: 30%;
   border: 5px solid orange;
   position: relative;
 }
@@ -78,11 +78,21 @@ main {
   background-color:#085659d2;
   /* padding:100px 50px; */
 }
-#coding img {
+pre img,#vb {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
+  /* width: 20rem; */
+  /* width:200px; */
+  background-color:#085659;
+  padding: 5px;
+}
+.secondary-img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 49%;
   background-color:#085659;
   padding: 5px;
 }
@@ -91,6 +101,14 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  background-color:#085659;
+  padding: 10px;
+}
+#main_img2 {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   background-color:#085659;
   padding: 10px;
 }
@@ -235,3 +253,17 @@ button[type="submit"] {
 .widget-title {
   font: size 1.2rem;
 }
+
+pre code h3 {
+  /* display: inline; */
+  word-wrap:break-word;
+  white-space: normal
+}
+
+li {
+  /* padding:20px 0px; */
+  margin:30px 0px;
+}
+/* section {
+  margin: 20px 0px;
+} */

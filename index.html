@@ -38,6 +38,8 @@
     </header>
     <hr style=height:2px;border-width:0;color:gray;background-color:gray;">
     <div>
+
+        <!-- aside for social icons -->
         <aside id="author">
             <section>
                 <link rel="stylesheet"
@@ -52,19 +54,23 @@
                 </div>
             </section>
         </aside>
+
         <!-- main -->
         <main id="why">
             <!-- blog heading -->
             <header>
-                <h1>1.OBJECTIVE :</h1>
+                <h1>INTRODUCTION</h1>
+                <h3>1.OBJECTIVE</h3>
                 <!-- blog img -->
-
-                <img src="./static/obj.webp" alt="" height="300px" width="450" id="main_img">
+                <img src="./static/obj.webp" alt="" height="300px" width="450px" id="main_img">
             </header>
+
             <!-- content -->
-            <!-- para1 -->
             <article>
+
+                <!-- Section for objective-->
                 <section>
+                    <!-- para and list (1) -->
                     <ul>
                         <li>Vehicle crash contributes to a significant number of deaths and injuries
                             in human races around the world.
@@ -79,12 +85,12 @@
                             trafficking system including road conditions or increasing awareness
                             among drivers, the experts must analyze the data of vehicle crash from
                             the past decades to find the major causes and come out with a decision.
-
                         </li>
                     </ul>
                     <p>Our visualization data provides complete failure analysis and the cost of labor
-                        for repair, and equipment for the vehicles, all over the United States. </p>
-                    <!-- para2 -->
+                        for repair, and equipment for the vehicles, all over the United States.
+                    </p>
+                    <!-- para(2) -->
                     <p>
                         With the help of this data our users can estimate the average cost of repair and
                         average material cost, if a user is going to buy a used vehicle, then with the
@@ -93,7 +99,7 @@
                         know how much will it cost to get it repaired based on this data he can take
                         the decision whether to buy vehicle or not
                     </p>
-                    <br>
+                    <!-- YT link -->
                     <div class="vidwrapper">
                         <div class="vidcontainer">
                             <iframe src="https://www.youtube.com/embed/fzHzCocjASg" title="YouTube video player"
@@ -101,61 +107,70 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
-                    </div>
-                </section>
-                <!-- list -->
-                <h1 style="font-size:32px;">2.FUNCTIONAL REQUIREMENTS</h1>
-                <section>
-                    <img src="./static/Functional-requirements.webp" height="300px" width="450" id="main_img" alt="">
+                    </div><br><br>
 
-                    <ol type="i">
-                        <li>
-                            <h4>Attributes</h4>
-                            <p>
-                                Analysis of car failures based on various independent variables like
-                                mileage, labor wages, etc.
-                                Analysis of car failure rate and the cost required to repair our vehicle
-                                based on various parameters like area(state), millage, labor costs, etc.
-                            </p>
-                            <ol>
-                                <li> Vehicle : vehicle id</li>
-                                <li>fm : Failure Month</li>
-                                <li>Mileage : The mileage at which car failure occurred</li>
-                                <li>lh : Labor hours (the amount of time took by the labor to repair the vehicle)</li>
-                                <li> lc : Labor cost (The cost of repairing the vehicle)</li>
-                                <li>mc : Material cost in dollars</li>
-                                <li>State : The state in which the failure occurred.</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h4>Results</h4>
-                            <p>
-                                Performing various comparisons among these parameters, we generate
-                                different types of visualizations like line graph, pie chart, box plot, etc, …
-                                and provide a report based on the conclusions obtained by comparing
-                                the data.
-                            </p>
-                        </li>
-                        <li>
-                            <h4>End User Benifits</h4>
-                            <p>
-                                Our results will be useful to the customers for estimating the cost of their
-                                vehicle repair and also to approximate the failure mileage and the data of
-                                previously failed vehicles, also the repairers can also estimate the
-                                materials cost required for repair.
-                            </p>
-                        </li>
-                    </ol>
-                </section>
+                    <!-- section Functional Requirements -->
+                    <h3>2.FUNCTIONAL REQUIREMENTS</h3>
+                    <section>
+                        <img src="./static/Functional-requirements.webp" height="300px" width="450" id="main_img2"
+                            alt="">
+
+                        <!-- list for functional requirements -->
+                        <ol type="i">
+                            <li>
+                                <h4>Attributes</h4>
+                                <p>
+                                    Analysis of car failures based on various independent variables like
+                                    mileage, labor wages, etc.
+                                    Analysis of car failure rate and the cost required to repair our vehicle
+                                    based on various parameters like area(state), millage, labor costs, etc.
+                                </p>
+                                <ol>
+                                    <li> Vehicle : vehicle id</li>
+                                    <li>fm : Failure Month</li>
+                                    <li>Mileage : The mileage at which car failure occurred</li>
+                                    <li>lh : Labor hours (the amount of time took by the labor to repair the
+                                        vehicle)</li>
+                                    <li> lc : Labor cost (The cost of repairing the vehicle)</li>
+                                    <li>mc : Material cost in dollars</li>
+                                    <li>State : The state in which the failure occurred.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h4>Results</h4>
+                                <p>
+                                    Performing various comparisons among these parameters, we generate
+                                    different types of visualizations like line graph, pie chart, box plot, etc, …
+                                    and provide a report based on the conclusions obtained by comparing
+                                    the data.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>End User Benifits</h4>
+                                <p>
+                                    Our results will be useful to the customers for estimating the cost of their
+                                    vehicle repair and also to approximate the failure mileage and the data of
+                                    previously failed vehicles, also the repairers can also estimate the
+                                    materials cost required for repair.
+                                </p>
+                            </li>
+                        </ol>
+                    </section>
             </article>
         </main>
 
+        <!-- aside for author and subscription -->
         <aside id="sub">
+
+            <!-- 1st Section -->
+            <!-- Author Details -->
             <section id="subscription" class="widget">
                 <h4>Author</h4>
                 <div id="img-position">
                     <a href="about.html"><img class="round" src="static/0.jfif" class="box-img"></a>
                 </div>
+
+                <!-- subscription form -->
                 <h4 class="widget-title">
                     Subscribe Now to stay updated
                 </h4>
@@ -172,16 +187,18 @@
             </section>
         </aside>
 
+        <!-- blog with the coding and more technical part -->
         <div id="coding">
-            <h1>3.DATA AND DESIGN REPRESENTATION</h1>
+            <h1>DATA AND DESIGN REPRESENTATION</h1><br>
+            <h3>1.DATA REPRESENTATIONS</h3>
+            <img src="./static/dv.jpeg" class="secondary-img" height="100%" width="50%" alt="">
             <article>
-                <section id="ending">
-                    <!-- ending para. -->
-                    <p>
-                        Data Representation refers to the form in which data is stored, processed,
-                        and transmitted.
-                    </p>
-                </section>
+                <p id="ending">
+                    Data Representation refers to the form in which data is stored, processed,
+                    and transmitted.
+                </p>
+
+                <!-- table and  section for table -->
                 <section>
                     <table border="2" cellspacing="2">
                         <caption>Proposed Visualizations</caption>
@@ -221,24 +238,27 @@
                             <td>State Wise Labour Cost</td>
                         </tr>
                     </table>
-                </section>
+                </section><br>
+
+                <!-- section for proposed design -->
                 <section>
-                    <h2>Design Of The Proposed System:</h1>
-                        <img src="./static/dv.jpeg" height="300px" width="450" id="main_img" alt="">
-                        <ul>
-                            <li>R markdown file is used for the dashboard creation</li>
-                            <li>The dashboard is divided into three pages containing different
-                                visualizations and a map for failure analysis and a data table</li>
-                            <li>We will also include the top states for car failures and the failure mileage
-                                for different cars in our dashboard design. </li>
-                            <li>We also have included tabs which display the dataset as table and we
-                                also have a tab for source code.
-                            </li>
-                        </ul>
-                        <div>
-                            <h1 style="font-size:32px">4.Libraries used for dashboard creation</h1>
-                            <img src="./static/giphy.gif" height="300px" width="450" id="main_img" alt="">
-                            <pre class="line-numbers">
+                    <h3>2.Design Of The Proposed System:</h3>
+                    <ul>
+                        <li>R markdown file is used for the dashboard creation</li>
+                        <li>The dashboard is divided into three pages containing different
+                            visualizations and a map for failure analysis and a data table</li>
+                        <li>We will also include the top states for car failures and the failure mileage
+                            for different cars in our dashboard design. </li>
+                        <li>We also have included tabs which display the dataset as table and we
+                            also have a tab for source code.
+                        </li>
+                    </ul>
+
+                    <!-- libraries -->
+                    <div>
+                        <h1 style="font-size:32px">Libraries used for dashboard creation</h1>
+                        <img src="./static/giphy.gif" class="secondary-img" alt="">
+                        <pre class="line-numbers">
                             <code class="language-R">
                                 <div>
 ```{r setup, include=FALSE}
@@ -255,47 +275,52 @@ library(ggvis)
                         </div>
                     </code>
                     </pre>
-                            <ol>
-                                <li>
-                                    <h4>Goal</h4>
-                                    The goal of flexdashboard is to make it easy to create interactive
-                                    dashboards for R, using R Markdown.
-                                </li>
-                                <li>
-                                    <h4>Knitr</h4>
-                                    knitr is an engine for dynamic report generation with R. It is a package in
-                                    the programming language R that enables integration of R code into
-                                    LaTeX, LyX, HTML, Markdown
-                                </li>
-                                <li>
-                                    <h4>DT</h4>
-                                    Data objects in R can be rendered as HTML tables using the
-                                    JavaScript library 'DataTables' (typically via R Markdown or Shiny). The
-                                    'DataTables' library has been included in this R package.
-                                </li>
-                                <li>
-                                    <h4>rpivotTable</h4>
-                                    The rpivotTable package is an R htmlwidget built around
-                                    the pivottable library
-                                </li>
-                                <li>
-                                    <h4>openintro</h4>
-                                    openintro The package contains data sets used in our open-source
-                                    textbooks along with custom plotting functions for reproducing book
-                                    figures.
-                                </li>
-                            </ol>
-                        </div>
+                        <!-- library list -->
+                        <ol>
+                            <li>
+                                <h4>Goal</h4>
+                                The goal of flexdashboard is to make it easy to create interactive
+                                dashboards for R, using R Markdown.
+                            </li>
+                            <li>
+                                <h4>Knitr</h4>
+                                knitr is an engine for dynamic report generation with R. It is a package in
+                                the programming language R that enables integration of R code into
+                                LaTeX, LyX, HTML, Markdown
+                            </li>
+                            <li>
+                                <h4>DT</h4>
+                                Data objects in R can be rendered as HTML tables using the
+                                JavaScript library 'DataTables' (typically via R Markdown or Shiny). The
+                                'DataTables' library has been included in this R package.
+                            </li>
+                            <li>
+                                <h4>rpivotTable</h4>
+                                The rpivotTable package is an R htmlwidget built around
+                                the pivottable library
+                            </li>
+                            <li>
+                                <h4>openintro</h4>
+                                openintro The package contains data sets used in our open-source
+                                textbooks along with custom plotting functions for reproducing book
+                                figures.
+                            </li>
+                        </ol>
+                    </div>
                 </section>
+
+                <!-- section for lists and code for creating appication-->
                 <section>
-                    <h1 style="font-size:32px;">5.Creating our Application</h1>
-                    <h4>VALUE BOXES</h4>
+                    <h1 style="font-size:32px;">Creating our Application</h1><br>
+                    <h3>VALUE BOXES</h3>
                     <p>ValueBoxes are used to show the data in larger text like titles so we have
                         placed in the main body of dashboard, we have shown “car failures in US and
                         various states” , “Labor Cost” , Etc by using valueBox.
                     </p>
-                    <img src="" alt="">
-                    <h4>INITIALIZING THE FIRST PAGE</h4>
+                    <img src="./static/lc.png" id="vb" alt="">
+
+                    <!-- list for creating application -->
+                    <h3>INITIALIZING THE FIRST PAGE</h3>
                     <ol>
                         <li>A new Row which consists the interactive bar plot of Failures By State
                             created using plot_ly
@@ -319,7 +344,7 @@ library(ggvis)
                             data analysis using ggvis
                         </li>
                     </ol>
-                    <h4>INITIALIZING SECOND AND THIRD PAGES</h4>
+                    <h3>INITIALIZING SECOND AND THIRD PAGES</h3>
                     <ol>
                         <li value="7">
                             Map visualization
@@ -329,6 +354,7 @@ library(ggvis)
                         <li>This Table provides multiple ways to narrow down the specific data</li>
                     </ol>
 
+                    <!-- all the code snipets -->
                     <pre class="line-numbers">
                         <code class="language-R">
                             <h3>1.CREATING VALUE BOXES</h3>
@@ -398,11 +424,15 @@ valueBox(sum(data$State == "FL"),
                     </pre>
                     <img src="./static/dash.PNG"
                         style="width:80%; max-width:100%; display: inline-block; margin-left: auto; margin-right: auto;"
-                        alt="">
+                        alt="" id="vb">
+
                 </section>
+
+                <!-- codes for all data visualizations -->
                 <section>
                     <pre class="line-numbers">
                         <code class="language-R">
+                             <hr style="height:2px;border-width:0;color:#085659;background-color:#085659;">
                             <h3>2.BAR PLOT FOR FAILURES OF EACH STATE</h3>
                             <div>
 Row
@@ -424,11 +454,13 @@ p1
 ```
                             </div>
                         </code>
+                        <img src="./static/barplot.png" alt="">
                     </pre>
-                    <img src="./static/barplot.png" alt="">
+
 
                     <pre class="line-numbers">
                         <code class="language-R">
+                            <hr style="height:2px;border-width:0;color:#085659;background-color:#085659;">
                             <h3>3.PIE CHART FOR FAILURE VS MILEAGE</h3>
                             <div>
 ### Top States
@@ -454,33 +486,31 @@ p2
 ```
                             </div>
                         </code>
+                        <img src="./static/pie.png" alt="">
                     </pre>
-                    <img src="./static/pie.png" alt="">
 
                     <pre class="line-numbers">
-                        <code class="language-R">
-                            <h3>4.BAR PLOT FOR MILEAGE VS FAILURE MILEAGE</h3>
-                            <div>
+                    <code class="language-R">
+                    <hr style="height:2px;border-width:0;color:#085659;background-color:#085659;">
+                    <h3>4.BAR PLOT FOR MILEAGE VS FAILURE MILEAGE</h3>
+                    <div>
 ### FM Vs Mileage
 
 ```{r}
-p3 <- plot_ly(data,
-              x = ~fm,
-              y = ~Mileage,
-              text = paste("FM:", data$fm,
-                           "Mileage:",
-                           data$Mileage),
-              type = "bar") %>%
-         layout(xaxis = list(title="FM"),
-                yaxis = list(title = "Failure Mileage"))
+p3 <- plot_ly(data, x=~fm, y=~Mileage, text=paste("FM:", data$fm, "Mileage:" , data$Mileage),
+    type="bar" ) %>%
+    layout(xaxis = list(title="FM"),
+    yaxis = list(title = "Failure Mileage"))
 p3
 ```
-                            </div>
-                        </code>
-                    </pre>
+                    </div>
+                    </code>
                     <img src="./static/FMVSMILEAGE.png" alt="">
+                    </pre>
+
                     <pre class="line-numbers">
                         <code class="language-R">
+                            <hr style="height:2px;border-width:0;color:#085659;background-color:#085659;">
                             <h3>5.SCATTER PLOT FOR MONTHS VS MILEAGE</h3>
                             <div>
                                 
@@ -504,11 +534,13 @@ p4
 ```
                             </div>
                         </code>
+                        <img src="./static/monthVsMileage.png" alt="">
                     </pre>
-                    <img src="./static/monthVsMileage.png" alt="">
+
 
                     <pre class="line-numbers">
                         <code class="language-R">
+                            <hr style="height:2px;border-width:0;color:#085659;background-color:#085659;">
                             <h3>6.LABOUR COSTS IN EACH STATE</h3>
                             <div>
 Labor costs
@@ -524,10 +556,13 @@ data %>%
 
                             </div>
                         </code>
+                        <img src="./static/boxplot.png" alt="">
                     </pre>
-                    <img src="./static/boxplot.png" alt="">
+
+
                     <pre class="line-numbers">
                         <code class="language-R">
+                            <hr style="height:2px;border-width:0;color:#085659;background-color:#085659;">
                             <h3>7.COLOR MAP WHICH SHOWS STATE-WISE FALIURES</h3>
                             <div>
 Map
@@ -553,10 +588,12 @@ highchart() %>%
 
                             </div>
                         </code>
+                        <img src="./static/map.png" alt="">
                     </pre>
-                    <img src="./static/map.png" alt="">
+
                     <pre class="line-numbers">
                         <code class="language-R">
+                            <hr style="height:2px;border-width:0;color:#085659;background-color:#085659;">
                             <h3>8.DATA TABLE</h3>
                             <div>
 Data Table
@@ -580,6 +617,7 @@ datatable(data,
             </article>
         </div>
 
+        <!-- section for comments -->
         <section id="user-comments">
             <form>
                 <div>
@@ -602,6 +640,8 @@ datatable(data,
                 </div>
             </form>
         </section>
+
+        <!-- section for showing comments -->
         <section id="comments">
             <h2>Comments</h2>
             <div>
