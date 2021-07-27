@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="./static/logo.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="./static/Capture.PNG">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="discriptin" content="neog camp build exercise level one level 1 level 0 level zero">
     <meta name="keywords"
         content="tanaypratap, neog, neog camp, build exercise, level one, level 1, level 0, level zero">
-    <title>Why Neog?</title>
+    <title>CAR FAILURE ANALYSIS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,8 +17,8 @@
     <nav>
         <h3><a href="./index.html">Home</a></h3>
         <h3><a href="#why">Objective</a></h3>
-        <h3><a href="#coding">Why coding</a></h3>
-        <h3><a href="#ending">Conclusion</a></h3>
+        <h3><a href="#coding">Proposed Design</a></h3>
+        <h3><a href="#application">Dashboard Creation</a></h3>
         <h3><a href="#comments">Go To Comments</a></h3>
 
     </nav>
@@ -33,8 +33,7 @@
         <!-- header img -->
         <img src="./giphy (1).gif" id="hero-img" alt="">
         <h2 style="text-align:center;"><a href="https://rpubs.com/irfan-nawaz/777239" target="_blank"
-                style="text-decoration: none; color: #085659;">Click Here For Web
-                Application</a></h2>
+                style="text-decoration: none; color: #085659;">Click Here For Visiting Dashboard</a></h2>
     </header>
     <hr style=height:2px;border-width:0;color:gray;background-color:gray;">
     <div>
@@ -112,8 +111,8 @@
                     <!-- section Functional Requirements -->
                     <h3>2.FUNCTIONAL REQUIREMENTS</h3>
                     <section>
-                        <img src="./static/Functional-requirements.webp" height="300px" width="450" id="main_img2"
-                            alt="">
+                        <!-- <img src="./static/Functional-requirements.webp" height="300px" width="450" id="main_img2"
+                            alt=""> -->
 
                         <!-- list for functional requirements -->
                         <ol type="i">
@@ -305,8 +304,8 @@ library(ggvis)
                 </section>
 
                 <!-- section for lists and code for creating appication-->
-                <section>
-                    <h1 style="font-size:32px;">Creating our Application</h1><br>
+                <section id="application">
+                    <h1 style="font-size:32px;">Dashboard Creation</h1><br>
                     <h3>VALUE BOXES</h3>
                     <p>ValueBoxes are used to show the data in larger text like titles so we have
                         placed in the main body of dashboard, we have shown “car failures in US and
@@ -607,55 +606,120 @@ datatable(data,
                     </pre>
                     <img src="./static/table.PNG"
                         style="width:80%; max-width:100%; display: inline-block; margin-left: auto; margin-right: auto;"
-                        alt="">
+                        id="vb" alt=""><br><br>
+
+                    <h1 style="font-size:32px">RESULT ANALYSIS</h1>
+                    <pre class="line-numbers">
+                        <code class="language-R">
+                            <div>
+                                
+Summary Report {data-oriuentation = columns}
+===========================================
+    
+Column {data-width = 100}
+-----------------------------------
+    
+### Max Failures In Month
+    
+    ```{r}
+valueBox(max(data$fm),
+         icon = "fa-user" )
+```
+
+### Average Labor cost
+```{r}
+valueBox(round(mean(data$lc),
+               digits = 2),
+         icon = "fa-area-chart")
+```
+
+### Average Mileage at Failure
+
+```{r}
+valueBox(round(mean(data$Mileage), digits = 2),
+         icon = "fa-area-chart")
+
+                            </div>
+                        </code>
+                        <img src="./static/ssc.png" alt="">
+                    </pre>
+
+                    <pre class="line-numbers">
+                        <code class="language-R">
+                            <div>
+1.This is a report on `r length(data$fm)` car failures.
+// length captures the amount of failures
+
+2.The average labor cost was `r mean(data$lc)`.
+// average labor cost
+
+3.The average material cost was `r mean(data$mc)`.
+// average material cost
+
+
+                            </div>
+                        </code>
+                        <img src="./static/rep.png" alt="">
+                    </pre>
                 </section>
             </article>
+            <hr style=width:100%;height:2px;border-width:0;color:gray;background-color:gray;">
+            <section>
+                <div id="conclusion">
+                    <p>
+                        That's it!!!🥳 I hope this blog gives you a basic understanding about Data visualization and how
+                        to
+                        craete a dashboard for our web applications using R-Markdown
+                    </p>
+                </div>
+                <img src="./static/end.gif" id="hero-img" alt="">
+
+            </section>
         </div>
 
-        <!-- section for comments -->
-        <section id="user-comments">
-            <form>
-                <div>
-                    <h1>Give Your Comment</h1>
-                </div>
-                <div>
-                    <label for="usernames">Username</label> <br>
-                    <input required type="text" name="username" id="usernames" placeholder="username">
-                </div>
-                <div>
-                    <label for="passwords">Password</label> <br>
-                    <input required type="password" name="password" id="passwords" placeholder="************">
-                </div>
-                <div>
-                    <label for="Comments">Comment</label> <br>
-                    <input required type="text" name="comments" id="comments">
-                </div>
-                <div>
-                    <input type="submit" name="submit">
-                </div>
-            </form>
-        </section>
+        <article id="comment">
+            <!-- section for comments -->
+            <section id="user-comments">
+                <form>
+                    <div>
+                        <h1 style="font-size:32px">Give Your Comment</h1>
+                    </div>
+                    <div>
+                        <label for="usernames">Username</label> <br>
+                        <input required type="text" name="username" id="usernames" placeholder="username">
+                    </div>
+                    <div>
+                        <label for="passwords">Password</label> <br>
+                        <input required type="password" name="password" id="passwords" placeholder="************">
+                    </div>
+                    <div>
+                        <label for="Comments">Comment</label> <br>
+                        <input required type="text" name="comments" id="comments">
+                    </div>
+                    <div>
+                        <input type="submit" name="submit">
+                    </div>
+                </form>
+            </section><br>
 
-        <!-- section for showing comments -->
-        <section id="comments">
-            <h2>Comments</h2>
-            <div>
-                <h4>Name</h4>
-                <p>Comment</p>
-            </div>
-            <div>
-                <h4>Name</h4>
-                <p>Comment</p>
-            </div>
-            <div>
-                <h4>Name</h4>
-                <p>Comment</p>
-            </div>
-        </section>
+            <!-- section for showing comments -->
+            <section id="comments">
+                <h2>Comments</h2>
+                <div>
+                    <h4>Name</h4>
+                    <p>Comment</p>
+                </div>
+                <div>
+                    <h4>Name</h4>
+                    <p>Comment</p>
+                </div>
+                <div>
+                    <h4>Name</h4>
+                    <p>Comment</p>
+                </div>
+            </section>
+        </article>
         <a href="#">Back To Top</a>
-        <footer>
-            <h3><a href="./quiz.html">Take a small survey based on this article.</a></h3>
-        </footer>
     </div>
 </body>
 
