@@ -31,9 +31,9 @@ vidwrapper {
   border: 5px solid black;
 }
 .vidcontainer {
-  width: 50%;
+  width: 80%;
   max-width: 100%;
-  padding-bottom: 30%;
+  padding-bottom: 50%;
   border: 5px solid orange;
   position: relative;
 }
@@ -87,7 +87,23 @@ pre img,#vb {
   /* width:200px; */
   background-color:#085659;
   padding: 5px;
+  text-align: left;
+  margin-left: -190px;
 }
+@media (max-width:767px) {
+  pre img,#vb {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width:200px; */
+  width:250px;
+  background-color:#085659;
+  padding: 5px;
+  text-align: left;
+  margin-left: -190px;
+}
+}
+
 .secondary-img {
   display: inline-block;
   margin-left: auto;
@@ -96,6 +112,18 @@ pre img,#vb {
   background-color:#085659;
   padding: 5px;
 }
+
+@media (max-width:767px) {
+  .secondary-img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  background-color:#085659;
+  padding: 5px;
+}
+}
+
 #main_img {
   display: inline-block;
   margin-left: auto;
